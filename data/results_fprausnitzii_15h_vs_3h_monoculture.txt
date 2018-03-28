@@ -1,0 +1,244 @@
+Species	Change	Locus_tag	COG_categories	COG_numbers	KO_numbers	COG_annotations
+F. prausnitzii	DOWN	FAEPRAA2165_RS00170	[E] Amino acid transport and metabolism	COG3633	KO:K07862	Na+/serine symporter
+F. prausnitzii	DOWN	FAEPRAA2165_RS00185				
+F. prausnitzii	UP	FAEPRAA2165_RS00435	[P] Inorganic ion transport and metabolism	COG0226	KO:K02040	ABC-type phosphate transport system, periplasmic component
+F. prausnitzii	UP	FAEPRAA2165_RS00445				
+F. prausnitzii	DOWN	FAEPRAA2165_RS00520				
+F. prausnitzii	DOWN	FAEPRAA2165_RS00525	[K] Transcription	COG0640	KO:K03892	DNA-binding transcriptional regulator, ArsR family
+F. prausnitzii	UP	FAEPRAA2165_RS00580				
+F. prausnitzii	UP	FAEPRAA2165_RS00650	[G] Carbohydrate transport and metabolism	COG3250	KO:K01190	Beta-galactosidase/beta-glucuronidase
+F. prausnitzii	UP	FAEPRAA2165_RS00835				
+F. prausnitzii	UP	FAEPRAA2165_RS00845				
+F. prausnitzii	UP	FAEPRAA2165_RS00850			KO:K06919	
+F. prausnitzii	UP	FAEPRAA2165_RS00855				
+F. prausnitzii	UP	FAEPRAA2165_RS00860				
+F. prausnitzii	DOWN	FAEPRAA2165_RS00865				
+F. prausnitzii	DOWN	FAEPRAA2165_RS00885	[S] Function unknown	COG0730	KO:K07090	Uncharacterized membrane protein YfcA
+F. prausnitzii	DOWN	FAEPRAA2165_RS00890	[K] Transcription	COG1846		DNA-binding transcriptional regulator, MarR family
+F. prausnitzii	UP	FAEPRAA2165_RS00980	[X] Mobilome: prophages, transposons	COG4679		Phage-related protein
+F. prausnitzii	UP	FAEPRAA2165_RS00985				
+F. prausnitzii	DOWN	FAEPRAA2165_RS01120				
+F. prausnitzii	DOWN	FAEPRAA2165_RS01220				
+F. prausnitzii	DOWN	FAEPRAA2165_RS01280				
+F. prausnitzii	UP	FAEPRAA2165_RS01420				
+F. prausnitzii	DOWN	FAEPRAA2165_RS01495				
+F. prausnitzii	DOWN	FAEPRAA2165_RS01525	[E] Amino acid transport and metabolism	COG1171	KO:K01754	Threonine dehydratase
+F. prausnitzii	UP	FAEPRAA2165_RS01600				
+F. prausnitzii	DOWN	FAEPRAA2165_RS01660				
+F. prausnitzii	DOWN	FAEPRAA2165_RS01670				
+F. prausnitzii	UP	FAEPRAA2165_RS01720	[F] Nucleotide transport and metabolism	COG0152	KO:K01923	Phosphoribosylaminoimidazole-succinocarboxamide synthase
+F. prausnitzii	DOWN	FAEPRAA2165_RS01870				
+F. prausnitzii	UP	FAEPRAA2165_RS02085	[L] Replication, recombination and repair	COG4974		Site-specific recombinase XerD
+F. prausnitzii	UP	FAEPRAA2165_RS02115				
+F. prausnitzii	UP	FAEPRAA2165_RS02120				
+F. prausnitzii	UP	FAEPRAA2165_RS02125				
+F. prausnitzii	UP	FAEPRAA2165_RS02130	[L] Replication, recombination and repair	COG0389	KO:K02346	Nucleotidyltransferase/DNA polymerase involved in DNA repair
+F. prausnitzii	UP	FAEPRAA2165_RS02135				
+F. prausnitzii	UP	FAEPRAA2165_RS02140				
+F. prausnitzii	DOWN	FAEPRAA2165_RS02635	[H] Coenzyme transport and metabolism	COG0352	KO:K00788	Thiamine monophosphate synthase
+F. prausnitzii	DOWN	FAEPRAA2165_RS02700			KO:K04042	
+F. prausnitzii	UP	FAEPRAA2165_RS03015	[G] Carbohydrate transport and metabolism	COG1299	KO:K02770	Phosphotransferase system, fructose-specific IIC component
+F. prausnitzii	UP	FAEPRAA2165_RS03055	[M] Cell wall/membrane/envelope biogenesis	COG1210	KO:K00963	UTP-glucose-1-phosphate uridylyltransferase
+F. prausnitzii	UP	FAEPRAA2165_RS03065				
+F. prausnitzii	UP	FAEPRAA2165_RS03070			KO:K02040	
+F. prausnitzii	UP	FAEPRAA2165_RS03080	[V] Defense mechanisms	COG4115	KO:K19158	Toxin component of the Txe-Axe toxin-antitoxin module, Txe/YoeB family
+F. prausnitzii	UP	FAEPRAA2165_RS03085	[V] Defense mechanisms	COG3077	KO:K07473	Antitoxin component of the RelBE or YafQ-DinJ toxin-antitoxin module
+F. prausnitzii	UP	FAEPRAA2165_RS03320	[L] Replication, recombination and repair	COG1961		Site-specific DNA recombinase related to the DNA invertase Pin
+F. prausnitzii	UP	FAEPRAA2165_RS03375				
+F. prausnitzii	UP	FAEPRAA2165_RS03380				
+F. prausnitzii	UP	FAEPRAA2165_RS03385				
+F. prausnitzii	UP	FAEPRAA2165_RS03920	[R] General function prediction only	COG1079	KO:K02057	ABC-type uncharacterized transport system, permease component
+F. prausnitzii	UP	FAEPRAA2165_RS03925	[R] General function prediction only	COG4603	KO:K02057	ABC-type uncharacterized transport system, permease component
+F. prausnitzii	UP	FAEPRAA2165_RS03935	[M] Cell wall/membrane/envelope biogenesis	COG1744	KO:K07335	Basic membrane lipoprotein Med, periplasmic binding protein (PBP1-ABC) superfamily
+F. prausnitzii	UP	FAEPRAA2165_RS03945			KO:K07473	
+F. prausnitzii	DOWN	FAEPRAA2165_RS04225				
+F. prausnitzii	DOWN	FAEPRAA2165_RS04385	[P] Inorganic ion transport and metabolism	COG1918	KO:K04758	Fe2+ transport system protein FeoA
+F. prausnitzii	DOWN	FAEPRAA2165_RS04390	[P] Inorganic ion transport and metabolism	COG1918	KO:K04758	Fe2+ transport system protein FeoA
+F. prausnitzii	DOWN	FAEPRAA2165_RS04395				
+F. prausnitzii	UP	FAEPRAA2165_RS04540	[E] Amino acid transport and metabolism	COG1113	KO:K03294	L-asparagine transporter and related permeases
+F. prausnitzii	UP	FAEPRAA2165_RS04700				
+F. prausnitzii	DOWN	FAEPRAA2165_RS04995				
+F. prausnitzii	UP	FAEPRAA2165_RS05010	[S] Function unknown	COG4684		Uncharacterized membrane protein
+F. prausnitzii	DOWN	FAEPRAA2165_RS05135	[V] Defense mechanisms	COG0534		Na+-driven multidrug efflux pump
+F. prausnitzii	UP	FAEPRAA2165_RS05285				
+F. prausnitzii	UP	FAEPRAA2165_RS05290	[C] Energy production and conversion	COG2414		Aldehyde:ferredoxin oxidoreductase
+F. prausnitzii	UP	FAEPRAA2165_RS05295	[C] Energy production and conversion	COG0437		Fe-S-cluster-containing dehydrogenase component
+F. prausnitzii	UP	FAEPRAA2165_RS05345				
+F. prausnitzii	DOWN	FAEPRAA2165_RS05400	[H] Coenzyme transport and metabolism	COG3601		Riboflavin transporter FmnP
+F. prausnitzii	DOWN	FAEPRAA2165_RS05560				
+F. prausnitzii	DOWN	FAEPRAA2165_RS05605				
+F. prausnitzii	UP	FAEPRAA2165_RS05670	[F] Nucleotide transport and metabolism	COG0041	KO:K01588	Phosphoribosylcarboxyaminoimidazole (NCAIR) mutase
+F. prausnitzii	UP	FAEPRAA2165_RS05680	[F] Nucleotide transport and metabolism	COG0150	KO:K01933	Phosphoribosylaminoimidazole (AIR) synthetase
+F. prausnitzii	UP	FAEPRAA2165_RS05685	[F] Nucleotide transport and metabolism	COG0299	KO:K11175	Folate-dependent phosphoribosylglycinamide formyltransferase PurN
+F. prausnitzii	UP	FAEPRAA2165_RS05690	[F] Nucleotide transport and metabolism	COG3363		Archaeal IMP cyclohydrolase
+F. prausnitzii	UP	FAEPRAA2165_RS05695			KO:K00602	
+F. prausnitzii	UP	FAEPRAA2165_RS05700	[F] Nucleotide transport and metabolism	COG0151	KO:K01945	Phosphoribosylamine-glycine ligase
+F. prausnitzii	UP	FAEPRAA2165_RS05710	[F] Nucleotide transport and metabolism	COG0015	KO:K01756	Adenylosuccinate lyase
+F. prausnitzii	UP	FAEPRAA2165_RS05715	[J] Translation, ribosomal structure and biogenesis	COG1187	KO:K06183	16S rRNA U516 pseudouridylate synthase RsuA and related 23S rRNA U2605, pseudouridylate synthases
+F. prausnitzii	UP	FAEPRAA2165_RS05775	[E] Amino acid transport and metabolism	COG4166	KO:K15580	ABC-type oligopeptide transport system, periplasmic component
+F. prausnitzii	UP	FAEPRAA2165_RS05855	[P] Inorganic ion transport and metabolism	COG2239	KO:K06213	Mg/Co/Ni transporter MgtE (contains CBS domain)
+F. prausnitzii	DOWN	FAEPRAA2165_RS05860	[R] General function prediction only	COG3981		Predicted acetyltransferase
+F. prausnitzii	UP	FAEPRAA2165_RS05935	[C] Energy production and conversion	COG0778		Nitroreductase
+F. prausnitzii	UP	FAEPRAA2165_RS05940				
+F. prausnitzii	UP	FAEPRAA2165_RS05945	[S] Function unknown	COG5523		Uncharacterized membrane protein
+F. prausnitzii	UP	FAEPRAA2165_RS05975				
+F. prausnitzii	UP	FAEPRAA2165_RS06040	[O] Posttranslational modification, protein turnover, chaperones	COG1397		ADP-ribosylglycohydrolase
+F. prausnitzii	UP	FAEPRAA2165_RS06045	[O] Posttranslational modification, protein turnover, chaperones	COG0071		Molecular chaperone IbpA, HSP20 family
+F. prausnitzii	DOWN	FAEPRAA2165_RS06090	[K] Transcription	COG1609		DNA-binding transcriptional regulator, LacI/PurR family
+F. prausnitzii	UP	FAEPRAA2165_RS06160				
+F. prausnitzii	UP	FAEPRAA2165_RS06165	[K] Transcription	COG1595	KO:K03088	DNA-directed RNA polymerase specialized sigma subunit, sigma24 family
+F. prausnitzii	UP	FAEPRAA2165_RS06200				
+F. prausnitzii	UP	FAEPRAA2165_RS06205	[X] Mobilome: prophages, transposons	COG3600		Uncharacterized phage-associated protein
+F. prausnitzii	UP	FAEPRAA2165_RS06280	[S] Function unknown	COG4716	KO:K10254	Myosin-crossreactive antigen  (function unknown)
+F. prausnitzii	UP	FAEPRAA2165_RS06285	[V] Defense mechanisms - [F] Nucleotide transport and metabolism	COG0737		2',3'-cyclic-nucleotide 2'-phosphodiesterase/5'- or 3'-nucleotidase, 5'-nucleotidase family
+F. prausnitzii	UP	FAEPRAA2165_RS06290			KO:K05349	
+F. prausnitzii	UP	FAEPRAA2165_RS06325	[M] Cell wall/membrane/envelope biogenesis	COG0438	KO:K19002	Glycosyltransferase involved in cell wall bisynthesis
+F. prausnitzii	UP	FAEPRAA2165_RS06510	[G] Carbohydrate transport and metabolism	COG1803	KO:K01734	Methylglyoxal synthase
+F. prausnitzii	DOWN	FAEPRAA2165_RS06530	[K] Transcription	COG1309		DNA-binding transcriptional regulator, AcrR family
+F. prausnitzii	UP	FAEPRAA2165_RS06595	[F] Nucleotide transport and metabolism	COG2233	KO:K03458	Xanthine/uracil permease
+F. prausnitzii	DOWN	FAEPRAA2165_RS06710				
+F. prausnitzii	DOWN	FAEPRAA2165_RS06810				
+F. prausnitzii	DOWN	FAEPRAA2165_RS06840	[C] Energy production and conversion	COG0716		Flavodoxin
+F. prausnitzii	UP	FAEPRAA2165_RS07040	[F] Nucleotide transport and metabolism	COG2759	KO:K01938	Formyltetrahydrofolate synthetase
+F. prausnitzii	UP	FAEPRAA2165_RS07045				
+F. prausnitzii	UP	FAEPRAA2165_RS07090				
+F. prausnitzii	DOWN	FAEPRAA2165_RS07245				
+F. prausnitzii	UP	FAEPRAA2165_RS07410	[K] Transcription - [T] Signal transduction mechanisms	COG0745		DNA-binding response regulator, OmpR family, contains REC and winged-helix (wHTH) domain
+F. prausnitzii	UP	FAEPRAA2165_RS07415				
+F. prausnitzii	UP	FAEPRAA2165_RS07420				
+F. prausnitzii	UP	FAEPRAA2165_RS07450				
+F. prausnitzii	DOWN	FAEPRAA2165_RS07515	[E] Amino acid transport and metabolism	COG4166	KO:K15580	ABC-type oligopeptide transport system, periplasmic component
+F. prausnitzii	DOWN	FAEPRAA2165_RS07575				
+F. prausnitzii	DOWN	FAEPRAA2165_RS07580				
+F. prausnitzii	DOWN	FAEPRAA2165_RS07585				
+F. prausnitzii	UP	FAEPRAA2165_RS07620	[K] Transcription	COG0195	KO:K02600	Transcription antitermination factor NusA, contains S1 and KH domains
+F. prausnitzii	UP	FAEPRAA2165_RS07630				
+F. prausnitzii	UP	FAEPRAA2165_RS07635	[J] Translation, ribosomal structure and biogenesis	COG0532	KO:K02519	Translation initiation factor IF-2, a GTPase
+F. prausnitzii	UP	FAEPRAA2165_RS07640	[J] Translation, ribosomal structure and biogenesis	COG0858	KO:K02834	Ribosome-binding factor A
+F. prausnitzii	UP	FAEPRAA2165_RS07650	[J] Translation, ribosomal structure and biogenesis	COG0130	KO:K03177	tRNA U55 pseudouridine synthase TruB, may also work on U342 of tmRNA
+F. prausnitzii	UP	FAEPRAA2165_RS07700	[C] Energy production and conversion	COG1454	KO:K00048	Alcohol dehydrogenase, class IV
+F. prausnitzii	UP	FAEPRAA2165_RS07705				
+F. prausnitzii	UP	FAEPRAA2165_RS07725			KO:K02005	
+F. prausnitzii	UP	FAEPRAA2165_RS07735	[M] Cell wall/membrane/envelope biogenesis	COG4591	KO:K02004	ABC-type transport system, involved in lipoprotein release, permease component
+F. prausnitzii	UP	FAEPRAA2165_RS07740				
+F. prausnitzii	UP	FAEPRAA2165_RS07750				
+F. prausnitzii	DOWN	FAEPRAA2165_RS07760				
+F. prausnitzii	UP	FAEPRAA2165_RS08095				
+F. prausnitzii	UP	FAEPRAA2165_RS08205				
+F. prausnitzii	DOWN	FAEPRAA2165_RS08260	[K] Transcription	COG1609	KO:K02529	DNA-binding transcriptional regulator, LacI/PurR family
+F. prausnitzii	UP	FAEPRAA2165_RS09060				
+F. prausnitzii	DOWN	FAEPRAA2165_RS09120	[E] Amino acid transport and metabolism - [R] General function prediction only	COG0493	KO:K00266	NADPH-dependent glutamate synthase beta chain or related oxidoreductase
+F. prausnitzii	UP	FAEPRAA2165_RS09220	[O] Posttranslational modification, protein turnover, chaperones	COG0071		Molecular chaperone IbpA, HSP20 family
+F. prausnitzii	UP	FAEPRAA2165_RS09400			KO:K06206	
+F. prausnitzii	UP	FAEPRAA2165_RS09405	[J] Translation, ribosomal structure and biogenesis	COG2110		O-acetyl-ADP-ribose deacetylase (regulator of RNase III), contains Macro domain
+F. prausnitzii	UP	FAEPRAA2165_RS09410	[R] General function prediction only - [H] Coenzyme transport and metabolism	COG1335		Nicotinamidase-related amidase
+F. prausnitzii	UP	FAEPRAA2165_RS09425	[L] Replication, recombination and repair	COG0389	KO:K03502	Nucleotidyltransferase/DNA polymerase involved in DNA repair
+F. prausnitzii	UP	FAEPRAA2165_RS10125	[G] Carbohydrate transport and metabolism	COG1653	KO:K02027	ABC-type glycerol-3-phosphate transport system, periplasmic component
+F. prausnitzii	UP	FAEPRAA2165_RS10130	[G] Carbohydrate transport and metabolism	COG1175	KO:K02025	ABC-type sugar transport system, permease component
+F. prausnitzii	UP	FAEPRAA2165_RS10135	[G] Carbohydrate transport and metabolism	COG0395	KO:K02026	ABC-type glycerol-3-phosphate transport system, permease component
+F. prausnitzii	UP	FAEPRAA2165_RS10140	[M] Cell wall/membrane/envelope biogenesis - [E] Amino acid transport and metabolism	COG0329	KO:K01639	Dihydrodipicolinate synthase/N-acetylneuraminate lyase
+F. prausnitzii	UP	FAEPRAA2165_RS10145	[G] Carbohydrate transport and metabolism	COG2731		Beta-galactosidase, beta subunit
+F. prausnitzii	UP	FAEPRAA2165_RS10150	[G] Carbohydrate transport and metabolism	COG3010	KO:K01788	Putative N-acetylmannosamine-6-phosphate epimerase
+F. prausnitzii	UP	FAEPRAA2165_RS10155	[K] Transcription - [G] Carbohydrate transport and metabolism	COG1940	KO:K00845	Sugar kinase of the NBD/HSP70 family, may contain an N-terminal HTH domain
+F. prausnitzii	UP	FAEPRAA2165_RS10160	[E] Amino acid transport and metabolism	COG2755		Lysophospholipase L1 or related esterase
+F. prausnitzii	DOWN	FAEPRAA2165_RS10435				
+F. prausnitzii	DOWN	FAEPRAA2165_RS10550				
+F. prausnitzii	UP	FAEPRAA2165_RS10780				
+F. prausnitzii	UP	FAEPRAA2165_RS10850	[E] Amino acid transport and metabolism - [K] Transcription	COG1167	KO:K00375	DNA-binding transcriptional regulator, MocR family, contains an aminotransferase domain
+F. prausnitzii	UP	FAEPRAA2165_RS10855				
+F. prausnitzii	UP	FAEPRAA2165_RS10870				
+F. prausnitzii	DOWN	FAEPRAA2165_RS10885				
+F. prausnitzii	DOWN	FAEPRAA2165_RS10890				
+F. prausnitzii	DOWN	FAEPRAA2165_RS10900	[K] Transcription	COG0583		DNA-binding transcriptional regulator, LysR family
+F. prausnitzii	UP	FAEPRAA2165_RS11075	[L] Replication, recombination and repair	COG1961		Site-specific DNA recombinase related to the DNA invertase Pin
+F. prausnitzii	UP	FAEPRAA2165_RS11080	[L] Replication, recombination and repair	COG1961		Site-specific DNA recombinase related to the DNA invertase Pin
+F. prausnitzii	UP	FAEPRAA2165_RS11100				
+F. prausnitzii	UP	FAEPRAA2165_RS11105				
+F. prausnitzii	UP	FAEPRAA2165_RS11110				
+F. prausnitzii	DOWN	FAEPRAA2165_RS11430				
+F. prausnitzii	DOWN	FAEPRAA2165_RS11435				
+F. prausnitzii	DOWN	FAEPRAA2165_RS11445	[K] Transcription	COG1396		Transcriptional regulator, contains XRE-family HTH domain
+F. prausnitzii	UP	FAEPRAA2165_RS11485				
+F. prausnitzii	UP	FAEPRAA2165_RS11495	[G] Carbohydrate transport and metabolism	COG1621	KO:K01193	Sucrose-6-phosphate hydrolase SacC, GH32 family
+F. prausnitzii	UP	FAEPRAA2165_RS11505	[G] Carbohydrate transport and metabolism	COG0395	KO:K17320	ABC-type glycerol-3-phosphate transport system, permease component
+F. prausnitzii	UP	FAEPRAA2165_RS11510	[G] Carbohydrate transport and metabolism	COG4209	KO:K17319	ABC-type polysaccharide transport system, permease component
+F. prausnitzii	DOWN	FAEPRAA2165_RS11640	[L] Replication, recombination and repair	COG0817	KO:K01159	Holliday junction resolvasome RuvABC endonuclease subunit
+F. prausnitzii	UP	FAEPRAA2165_RS11785	[J] Translation, ribosomal structure and biogenesis	COG0200	KO:K02876	Ribosomal protein L15
+F. prausnitzii	UP	FAEPRAA2165_RS11795	[J] Translation, ribosomal structure and biogenesis	COG0098	KO:K02988	Ribosomal protein S5
+F. prausnitzii	UP	FAEPRAA2165_RS11800	[J] Translation, ribosomal structure and biogenesis	COG0256	KO:K02881	Ribosomal protein L18
+F. prausnitzii	UP	FAEPRAA2165_RS11805	[J] Translation, ribosomal structure and biogenesis	COG0097	KO:K02933	Ribosomal protein L6P/L9E
+F. prausnitzii	UP	FAEPRAA2165_RS11820	[J] Translation, ribosomal structure and biogenesis	COG0094	KO:K02931	Ribosomal protein L5
+F. prausnitzii	UP	FAEPRAA2165_RS11825	[J] Translation, ribosomal structure and biogenesis	COG0198	KO:K02895	Ribosomal protein L24
+F. prausnitzii	UP	FAEPRAA2165_RS11830	[J] Translation, ribosomal structure and biogenesis	COG0093	KO:K02874	Ribosomal protein L14
+F. prausnitzii	UP	FAEPRAA2165_RS11835	[J] Translation, ribosomal structure and biogenesis	COG0186	KO:K02961	Ribosomal protein S17
+F. prausnitzii	UP	FAEPRAA2165_RS11845	[J] Translation, ribosomal structure and biogenesis	COG0197	KO:K02878	Ribosomal protein L16/L10AE
+F. prausnitzii	UP	FAEPRAA2165_RS11850	[J] Translation, ribosomal structure and biogenesis	COG0092	KO:K02982	Ribosomal protein S3
+F. prausnitzii	UP	FAEPRAA2165_RS11865	[J] Translation, ribosomal structure and biogenesis	COG0090	KO:K02886	Ribosomal protein L2
+F. prausnitzii	UP	FAEPRAA2165_RS11870	[J] Translation, ribosomal structure and biogenesis	COG0089	KO:K02892	Ribosomal protein L23
+F. prausnitzii	UP	FAEPRAA2165_RS11875	[J] Translation, ribosomal structure and biogenesis	COG0088	KO:K02926	Ribosomal protein L4
+F. prausnitzii	UP	FAEPRAA2165_RS11880	[J] Translation, ribosomal structure and biogenesis	COG0087	KO:K02906	Ribosomal protein L3
+F. prausnitzii	DOWN	FAEPRAA2165_RS11945	[G] Carbohydrate transport and metabolism	COG1653	KO:K10192	ABC-type glycerol-3-phosphate transport system, periplasmic component
+F. prausnitzii	UP	FAEPRAA2165_RS12000				
+F. prausnitzii	UP	FAEPRAA2165_RS12005	[Q] Secondary metabolites biosynthesis, transport and catabolism - [I] Lipid transport and metabolism	COG0236	KO:K02078	Acyl carrier protein
+F. prausnitzii	UP	FAEPRAA2165_RS12010	[I] Lipid transport and metabolism - [Q] Secondary metabolites biosynthesis, transport and catabolism	COG0318	KO:K01897	Acyl-CoA synthetase (AMP-forming)/AMP-acid ligase II
+F. prausnitzii	UP	FAEPRAA2165_RS12015	[Q] Secondary metabolites biosynthesis, transport and catabolism - [I] Lipid transport and metabolism	COG0318	KO:K01897	Acyl-CoA synthetase (AMP-forming)/AMP-acid ligase II
+F. prausnitzii	DOWN	FAEPRAA2165_RS12180				
+F. prausnitzii	DOWN	FAEPRAA2165_RS12340	[K] Transcription	COG2207		AraC-type DNA-binding domain and AraC-containing proteins
+F. prausnitzii	UP	FAEPRAA2165_RS12605	[S] Function unknown	COG4720		Uncharacterized membrane protein
+F. prausnitzii	UP	FAEPRAA2165_RS12610	[H] Coenzyme transport and metabolism	COG0285	KO:K11754	Folylpolyglutamate synthase/Dihydropteroate synthase
+F. prausnitzii	DOWN	FAEPRAA2165_RS12635	[K] Transcription - [T] Signal transduction mechanisms	COG3279		DNA-binding response regulator, LytR/AlgR family
+F. prausnitzii	DOWN	FAEPRAA2165_RS12640				
+F. prausnitzii	UP	FAEPRAA2165_RS12680	[E] Amino acid transport and metabolism	COG1135	KO:K02071	ABC-type methionine transport system, ATPase component
+F. prausnitzii	UP	FAEPRAA2165_RS12685	[E] Amino acid transport and metabolism	COG2011	KO:K02072	ABC-type methionine transport system, permease component
+F. prausnitzii	UP	FAEPRAA2165_RS12690	[E] Amino acid transport and metabolism	COG2873	KO:K01740	O-acetylhomoserine/O-acetylserine sulfhydrylase, pyridoxal phosphate-dependent
+F. prausnitzii	UP	FAEPRAA2165_RS12695	[E] Amino acid transport and metabolism	COG1897	KO:K00651	Homoserine trans-succinylase
+F. prausnitzii	UP	FAEPRAA2165_RS12700	[Q] Secondary metabolites biosynthesis, transport and catabolism - [E] Amino acid transport and metabolism	COG3191	KO:K01266	L-aminopeptidase/D-esterase
+F. prausnitzii	UP	FAEPRAA2165_RS12710	[J] Translation, ribosomal structure and biogenesis	COG1720		tRNA (Thr-GGU) A37 N-methylase
+F. prausnitzii	UP	FAEPRAA2165_RS12720				
+F. prausnitzii	UP	FAEPRAA2165_RS12725				
+F. prausnitzii	DOWN	FAEPRAA2165_RS12735				
+F. prausnitzii	UP	FAEPRAA2165_RS12770	[F] Nucleotide transport and metabolism	COG2252	KO:K06901	Xanthine/uracil/vitamin C permease, AzgA family
+F. prausnitzii	DOWN	FAEPRAA2165_RS12800	[Q] Secondary metabolites biosynthesis, transport and catabolism - [I] Lipid transport and metabolism	COG0236	KO:K02078	Acyl carrier protein
+F. prausnitzii	DOWN	FAEPRAA2165_RS12855				
+F. prausnitzii	UP	FAEPRAA2165_RS12910	[K] Transcription	COG1609	KO:K02529 - KO:K03604	DNA-binding transcriptional regulator, LacI/PurR family
+F. prausnitzii	UP	FAEPRAA2165_RS12915	[G] Carbohydrate transport and metabolism	COG1653		ABC-type glycerol-3-phosphate transport system, periplasmic component
+F. prausnitzii	UP	FAEPRAA2165_RS12920	[G] Carbohydrate transport and metabolism	COG1175	KO:K02025	ABC-type sugar transport system, permease component
+F. prausnitzii	UP	FAEPRAA2165_RS12925	[G] Carbohydrate transport and metabolism	COG0395	KO:K02026	ABC-type glycerol-3-phosphate transport system, permease component
+F. prausnitzii	UP	FAEPRAA2165_RS13010				
+F. prausnitzii	UP	FAEPRAA2165_RS13015				
+F. prausnitzii	UP	FAEPRAA2165_RS13020				
+F. prausnitzii	UP	FAEPRAA2165_RS13025				
+F. prausnitzii	UP	FAEPRAA2165_RS13030				
+F. prausnitzii	UP	FAEPRAA2165_RS13035				
+F. prausnitzii	UP	FAEPRAA2165_RS13050				
+F. prausnitzii	UP	FAEPRAA2165_RS13055				
+F. prausnitzii	UP	FAEPRAA2165_RS13060				
+F. prausnitzii	UP	FAEPRAA2165_RS13065	[S] Function unknown	COG1512	KO:K06872	Uncharacterized membrane protein YgcG, contains a TPM-fold domain
+F. prausnitzii	UP	FAEPRAA2165_RS13070				
+F. prausnitzii	UP	FAEPRAA2165_RS13075				
+F. prausnitzii	UP	FAEPRAA2165_RS13080				
+F. prausnitzii	UP	FAEPRAA2165_RS13085				
+F. prausnitzii	UP	FAEPRAA2165_RS13090	[V] Defense mechanisms - [F] Nucleotide transport and metabolism	COG0737	KO:K01081	2',3'-cyclic-nucleotide 2'-phosphodiesterase/5'- or 3'-nucleotidase, 5'-nucleotidase family
+F. prausnitzii	UP	FAEPRAA2165_RS13095	[K] Transcription	COG4886		Leucine-rich repeat (LRR) protein
+F. prausnitzii	UP	FAEPRAA2165_RS13230	[T] Signal transduction mechanisms	COG0642		Signal transduction histidine kinase
+F. prausnitzii	UP	FAEPRAA2165_RS13235	[K] Transcription - [T] Signal transduction mechanisms	COG0745		DNA-binding response regulator, OmpR family, contains REC and winged-helix (wHTH) domain
+F. prausnitzii	UP	FAEPRAA2165_RS13240				
+F. prausnitzii	UP	FAEPRAA2165_RS13245	[M] Cell wall/membrane/envelope biogenesis	COG0451	KO:K00091	Nucleoside-diphosphate-sugar epimerase
+F. prausnitzii	UP	FAEPRAA2165_RS13250	[R] General function prediction only - [I] Lipid transport and metabolism - [Q] Secondary metabolites biosynthesis, transport and catabolism	COG1028		NAD(P)-dependent dehydrogenase, short-chain alcohol dehydrogenase family
+F. prausnitzii	DOWN	FAEPRAA2165_RS13385	[G] Carbohydrate transport and metabolism	COG0058	KO:K00688	Glucan phosphorylase
+F. prausnitzii	DOWN	FAEPRAA2165_RS13395				
+F. prausnitzii	DOWN	FAEPRAA2165_RS13495	[K] Transcription	COG0583		DNA-binding transcriptional regulator, LysR family
+F. prausnitzii	DOWN	FAEPRAA2165_RS13775				
+F. prausnitzii	DOWN	FAEPRAA2165_RS14355	[M] Cell wall/membrane/envelope biogenesis	COG0766	KO:K00790	UDP-N-acetylglucosamine enolpyruvyl transferase
+F. prausnitzii	UP	FAEPRAA2165_RS14530	[O] Posttranslational modification, protein turnover, chaperones	COG0542	KO:K03695	ATP-dependent Clp protease ATP-binding subunit ClpA
+F. prausnitzii	UP	FAEPRAA2165_RS14555	[M] Cell wall/membrane/envelope biogenesis	COG1209	KO:K00973	dTDP-glucose pyrophosphorylase
+F. prausnitzii	UP	FAEPRAA2165_RS14560	[M] Cell wall/membrane/envelope biogenesis	COG1091	KO:K00067	dTDP-4-dehydrorhamnose reductase
+F. prausnitzii	UP	FAEPRAA2165_RS14565	[M] Cell wall/membrane/envelope biogenesis	COG1088	KO:K01710	dTDP-D-glucose 4,6-dehydratase
+F. prausnitzii	DOWN	FAEPRAA2165_RS14585				
+F. prausnitzii	UP	FAEPRAA2165_RS14600				
+F. prausnitzii	UP	FAEPRAA2165_RS14925				
+F. prausnitzii	UP	FAEPRAA2165_RS14960				
+F. prausnitzii	UP	FAEPRAA2165_RS15270				
+F. prausnitzii	UP	FAEPRAA2165_RS15300				
+F. prausnitzii	DOWN	FAEPRAA2165_RS15465				
+F. prausnitzii	UP	FAEPRAA2165_RS15485				
