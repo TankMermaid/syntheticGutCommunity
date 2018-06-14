@@ -18,7 +18,7 @@ require(ggpubr)
 require(DESeq2)
 require(clusterProfiler)
 require(tidyverse)
-source("~/syntheticGutCommunity/R/helperFunctions.R") # this loads the function to perform Fisher's exact test for functional enrichment 
+source("R/helperFunctions.R") # this loads the function to perform Fisher's exact test for functional enrichment 
 
 
 # define bacterial (and possible contaminant) indices in the count matrix output from htseq-count
@@ -33,7 +33,7 @@ ychI=c(1:4,2830:2837,2852:2892,6728:6734,10050:16416) # Yeast
 
 # list count files
 
-directory="~/syntheticGutCommunity/data/counts/"
+directory="data/counts/"
 files=list.files(directory)
 
 
@@ -64,15 +64,12 @@ metadataRI$time = factor(metadataRI$time,levels(metadataRI$time)[c(2,3,1)])
 
 # read files and create a count matrix
 
-setwd(directory)
-countMatrix=data.frame(row.names=read.table(files[1], header=F, stringsAsFactors=F, sep="\t")[1:16416,1])
+countMatrix=data.frame(row.names=read.table(paste(directory,files[1], sep=""), header=F, stringsAsFactors=F, sep="\t")[1:16416,1])
 for(exp in files){
-  tmp=read.table(exp, header=F, stringsAsFactors=F, sep="\t")[1:16416,]
+  tmp=read.table(paste(directory,exp, sep=""), header=F, stringsAsFactors=F, sep="\t")[1:16416,]
   countMatrix=cbind(countMatrix,tmp[,2])
 }
 colnames(countMatrix)=experiments
-
-
 
 
 
@@ -112,15 +109,15 @@ statsData[,5:9]=statsData[,5:9]*100/percentageSums
 # reshape data before plotting with ggbarplot
 
 species1=statsData[,c(1:5)]
-species1$sp="BH"
+species1$sp="B. hydrogenotrophica"
 species2=statsData[,c(1:4,6)]
-species2$sp="RI"
+species2$sp="R. intestinalis"
 species3=statsData[,c(1:4,7)]
-species3$sp="FP"
+species3$sp="F. prausnitzii"
 species4=statsData[,c(1:4,8)]
-species4$sp="phiX"
+species4$sp="PhiX174"
 species5=statsData[,c(1:4,9)]
-species5$sp="Yeast"
+species5$sp="S. cerevisiae S288c"
 
 colnames(species1)[5]="readCounts"
 colnames(species2)[5]="readCounts"
@@ -145,19 +142,17 @@ statsData$species[statsData$species=="rint"]="R. intestinalis"
 statsData$species[statsData$species=="fpra"]="F. prausnitzii"
 statsData$species[statsData$species=="all"]="All"
 
-statsData$sp[statsData$sp=="phiX"]="PhiX174"
-statsData$sp[statsData$sp=="Yeast"]="S. cerevisiae S288c"
-
-statsData$sp=factor(statsData$sp, levels=c("BH", "FP", "RI", "S. cerevisiae S288c", "PhiX174"))
+statsData$sp=factor(statsData$sp, levels=c("B. hydrogenotrophica", "F. prausnitzii", "R. intestinalis", "S. cerevisiae S288c", "PhiX174"))
 
 
 
 # plot with ggbarplot
 
-pdf("~/syntheticGutCommunity/figures/mapping_counts_withphiX174_yeast_normalized.pdf", width=9, height=5)
+pdf("figures/mapping_counts_withphiX174_yeast_normalized.pdf", width=9, height=5)
 ggbarplot(statsData, x="time", y="readCounts", color="sp", fill="sp", facet.by =c("replicate", "species"),position = position_dodge(0.8), 
           palette=c(rgb(14, 112, 3, max = 255),rgb(4, 0, 255, max = 255), rgb(251, 0, 6, max = 255), rgb(254, 181, 30, max = 255), rgb(25, 197, 198, max = 255)), 
-          legend="right", legend.title="Species", ylab = "Read counts normalized by transcriptome size (%)")+theme_light()
+          legend="right", legend.title="Species", ylab = "Read counts normalized by transcriptome size (%)")+theme_light() +  theme(legend.text = element_text(face = "italic"))
+
 dev.off()
 
 
@@ -205,7 +200,7 @@ genesDW=rownames(resfilt)[resfilt$log2FoldChange<0] # DW in triculture vs monocu
 
 # load annotation table and perform COG category enrichment using Fisher's exact test
 
-blautia_annot=read.delim("~/syntheticGutCommunity/data/blautia_annotation.txt", header=T, stringsAsFactors = F, sep="\t")
+blautia_annot=read.delim("data/blautia_annotation.txt", header=T, stringsAsFactors = F, sep="\t")
 
 all_COGs=blautia_annot[blautia_annot$Source=="COG_category",3]
 UP_COGs=blautia_annot[blautia_annot$Source=="COG_category" & blautia_annot$New_locus_tag %in% genesUP,3]
@@ -230,7 +225,7 @@ GSEAgenes=GSEA(sort(genelist, decreasing = T), TERM2GENE = T2G)
 
 # plot GSEA result 
 
-pdf("~/syntheticGutCommunity/figures/GSEA_bhydrogenotrophica.pdf")
+pdf("figures/GSEA_bhydrogenotrophica.pdf")
 for(i in rownames(slot(object = GSEAgenes, name = "result"))){
   gseaplot(GSEAgenes, i, title = i, color.line="#E64B35FF", color.vline = "#4DBBD5FF")
   plot.new()
@@ -246,15 +241,16 @@ COG_categories=c()
 KO_numbers=c()
 Species=c()
 Change=c()
+Pval=c()
+Padj=c()
 Locus_tag=c()
 COG_annotations=c()
 line=1
 for(i in 1:nrow(resfilt)){
   Species[line]="B. hydrogenotrophica"
-  Change[line]="DOWN"
-  if(resfilt[i,2]>0){
-    Change[line]="UP"
-  }
+  Change[line]=resfilt[i,2]
+  Pval[line]=resfilt[i,5]
+  Padj[line]=resfilt[i,6]
   Locus_tag[line]=rownames(resfilt)[i]
   COG_categories[line]=paste(na.omit(blautia_annot[blautia_annot$Source=="COG_category" & blautia_annot$New_locus_tag==rownames(resfilt)[i],3]),collapse=" - ")
   COG_numbers[line]=paste(na.omit(blautia_annot[blautia_annot$Source=="COG_number" & blautia_annot$New_locus_tag==rownames(resfilt)[i],3]),collapse=" - ")
@@ -303,7 +299,7 @@ genesDW=rownames(resfilt)[resfilt$log2FoldChange<0] ## DW in triculture vs mono
 
 # load annotation table and perform COG category enrichment using Fisher's exact test
 
-faecalibacterium_annot=read.delim("~/syntheticGutCommunity/data/faecalibacterium_annotation.txt", header=T, stringsAsFactors = F, sep="\t")
+faecalibacterium_annot=read.delim("data/faecalibacterium_annotation.txt", header=T, stringsAsFactors = F, sep="\t")
 
 all_COGs=faecalibacterium_annot[faecalibacterium_annot$Source=="COG_category",3]
 UP_COGs=faecalibacterium_annot[faecalibacterium_annot$Source=="COG_category" & faecalibacterium_annot$New_locus_tag %in% genesUP,3]
@@ -328,7 +324,7 @@ GSEAgenes=GSEA(sort(genelist, decreasing = T), TERM2GENE = T2G)
 
 # plot GSEA result 
 
-pdf("~/syntheticGutCommunity/figures/GSEA_fprausnitzii.pdf")
+pdf("figures/GSEA_fprausnitzii.pdf")
 for(i in rownames(slot(object = GSEAgenes, name = "result"))){
   gseaplot(GSEAgenes, i, title = i, color.line="#E64B35FF", color.vline = "#4DBBD5FF")
   plot.new()
@@ -341,10 +337,9 @@ dev.off()
 
 for(i in 1:nrow(resfilt)){
   Species[line]="F. prausnitzii"
-  Change[line]="DOWN"
-  if(resfilt[i,2]>0){
-    Change[line]="UP"
-  }
+  Change[line]=resfilt[i,2]
+  Pval[line]=resfilt[i,5]
+  Padj[line]=resfilt[i,6]
   Locus_tag[line]=rownames(resfilt)[i]
   COG_categories[line]=paste(na.omit(faecalibacterium_annot[faecalibacterium_annot$Source=="COG_category" & faecalibacterium_annot$New_locus_tag==rownames(resfilt)[i],3]),collapse=" - ")
   COG_numbers[line]=paste(na.omit(faecalibacterium_annot[faecalibacterium_annot$Source=="COG_number" & faecalibacterium_annot$New_locus_tag==rownames(resfilt)[i],3]),collapse=" - ")
@@ -393,7 +388,7 @@ genesDW=rownames(resfilt)[resfilt$log2FoldChange<0] ## DW in triculture vs mono
 
 # load annotation table and perform COG category enrichment using Fisher's exact test
 
-roseburia_annot=read.delim("~/syntheticGutCommunity/data/roseburia_annotation.txt", header=T, stringsAsFactors = F, sep="\t")
+roseburia_annot=read.delim("data/roseburia_annotation.txt", header=T, stringsAsFactors = F, sep="\t")
 
 all_COGs=roseburia_annot[roseburia_annot$Source=="COG_category",3]
 UP_COGs=roseburia_annot[roseburia_annot$Source=="COG_category" & roseburia_annot$New_locus_tag %in% genesUP,3]
@@ -417,13 +412,13 @@ GSEAgenes=GSEA(sort(genelist, decreasing = T), TERM2GENE = T2G)
 
 
 # plot GSEA result 
-
-pdf("~/syntheticGutCommunity/figures/GSEA_bhydrogenotrophica.pdf")
-for(i in rownames(slot(object = GSEAgenes, name = "result"))){
-  gseaplot(GSEAgenes, i, title = i, color.line="#E64B35FF", color.vline = "#4DBBD5FF")
-  plot.new()
-}
-dev.off()
+# do not plot as there is no significant GSEA result
+# pdf("figures/GSEA_rintestinalis.pdf")
+# for(i in rownames(slot(object = GSEAgenes, name = "result"))){
+#   gseaplot(GSEAgenes, i, title = i, color.line="#E64B35FF", color.vline = "#4DBBD5FF")
+#   # plot.new()
+# }
+# dev.off()
 
 
 
@@ -431,10 +426,9 @@ dev.off()
 
 for(i in 1:nrow(resfilt)){
   Species[line]="R. intestinalis"
-  Change[line]="DOWN"
-  if(resfilt[i,2]>0){
-    Change[line]="UP"
-  }
+  Change[line]=resfilt[i,2]
+  Pval[line]=resfilt[i,5]
+  Padj[line]=resfilt[i,6]
   Locus_tag[line]=rownames(resfilt)[i]
   COG_categories[line]=paste(na.omit(roseburia_annot[roseburia_annot$Source=="COG_category" & roseburia_annot$New_locus_tag==rownames(resfilt)[i],3]),collapse=" - ")
   COG_numbers[line]=paste(na.omit(roseburia_annot[roseburia_annot$Source=="COG_number" & roseburia_annot$New_locus_tag==rownames(resfilt)[i],3]),collapse=" - ")
@@ -447,8 +441,8 @@ for(i in 1:nrow(resfilt)){
 
 # make and write table for all three species 
 
-results=cbind(Species, Change, Locus_tag, COG_categories, COG_numbers, KO_numbers, COG_annotations)
-write.table(results, "~/syntheticGutCommunity/data/results_triculture_vs_monoculture.txt", col.names=T, row.names=F, quote=F, sep="\t")
+results=cbind(Species,Locus_tag, Change, Pval, Padj, COG_categories, COG_numbers, KO_numbers, COG_annotations)
+write.table(results, "data_output/results_triculture_vs_monoculture.txt", col.names=T, row.names=F, quote=F, sep="\t")
 
 
 
@@ -493,7 +487,7 @@ genesDW=rownames(resfilt)[resfilt$log2FoldChange<0] ## DW at 15h vs 3h
 
 # load annotation table and perform COG category enrichment using Fisher's exact test
 
-faecalibacterium_annot=read.delim("~/syntheticGutCommunity/data/faecalibacterium_annotation.txt", header=T, stringsAsFactors = F, sep="\t")
+faecalibacterium_annot=read.delim("data/faecalibacterium_annotation.txt", header=T, stringsAsFactors = F, sep="\t")
 
 all_COGs=faecalibacterium_annot[faecalibacterium_annot$Source=="COG_category",3]
 UP_COGs=faecalibacterium_annot[faecalibacterium_annot$Source=="COG_category" & faecalibacterium_annot$New_locus_tag %in% genesUP,3]
@@ -518,10 +512,10 @@ GSEAgenes=GSEA(sort(genelist, decreasing = T), TERM2GENE = T2G)
 
 # plot GSEA result 
 
-pdf("~/syntheticGutCommunity/figures/GSEA_fprausnitzii_15h_vs_3h.pdf")
+pdf("figures/GSEA_fprausnitzii_15h_vs_3h.pdf")
 for(i in rownames(slot(object = GSEAgenes, name = "result"))){
   gseaplot(GSEAgenes, i, title = i, color.line="#E64B35FF", color.vline = "#4DBBD5FF")
-  plot.new()
+  # plot.new()
 }
 dev.off()
 
@@ -534,15 +528,16 @@ COG_categories=c()
 KO_numbers=c()
 Species=c()
 Change=c()
+Pval=c()
+Padj=c()
 Locus_tag=c()
 COG_annotations=c()
 line=1
 for(i in 1:nrow(resfilt)){
   Species[line]="F. prausnitzii"
-  Change[line]="DOWN"
-  if(resfilt[i,2]>0){
-    Change[line]="UP"
-  }
+  Change[line]=resfilt[i,2]
+  Pval[line]=resfilt[i,5]
+  Padj[line]=resfilt[i,6]
   Locus_tag[line]=rownames(resfilt)[i]
   COG_categories[line]=paste(na.omit(faecalibacterium_annot[faecalibacterium_annot$Source=="COG_category" & faecalibacterium_annot$New_locus_tag==rownames(resfilt)[i],3]),collapse=" - ")
   COG_numbers[line]=paste(na.omit(faecalibacterium_annot[faecalibacterium_annot$Source=="COG_number" & faecalibacterium_annot$New_locus_tag==rownames(resfilt)[i],3]),collapse=" - ")
@@ -554,6 +549,6 @@ for(i in 1:nrow(resfilt)){
 
 # make and write table
 
-resultsFP=cbind(Species, Change, Locus_tag, COG_categories, COG_numbers, KO_numbers, COG_annotations)
-write.table(resultsFP, "~/syntheticGutCommunity/data/results_fprausnitzii_15h_vs_3h_monoculture.txt", col.names=T, row.names=F, quote=F, sep="\t")
+resultsFP=cbind(Species,Locus_tag, Change, Pval, Padj, COG_categories, COG_numbers, KO_numbers, COG_annotations)
+write.table(resultsFP, "data_output/results_fprausnitzii_15h_vs_3h_monoculture.txt", col.names=T, row.names=F, quote=F, sep="\t")
 
